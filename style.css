@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background: black;
+}
+main {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.game{
+    position: relative;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.back{
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.next{
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.text{
+    display: flex;
+}
+.text h2{
+    margin: 2px 21vh;
+    padding: 5px 10px;
+    border: solid white;
+    border-radius: 5px;
+}
+
+.arrow{
+    margin: 0 5vh;
+    transform: scale(.3);
+    cursor: pointer;
+}
+.arrow:hover{
+    animation: hover 2s ease-in-out infinite;
+}
+@keyframes hover {
+    0% {transform: scale(.3);}
+    50% {transform: scale(.45);}
+    100% {transform: scale(.3);}
+}
+
+button{
+    margin: 5px;
+    cursor: pointer;
+}
